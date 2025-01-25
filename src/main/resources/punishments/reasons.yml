@@ -1,0 +1,29 @@
+#Here you can edit/add reasons for a ban/mute/warn or a ip-ban.
+#at the bottom there is also a messages: for a ban/mute/warn or a ip-ban. If you want you can edit that so that you can see the ban screen or the message you get when you are warned/muted
+
+bans:
+  Cheating:
+    offences:
+      '1':
+        duration: 7d
+      '2':
+        duration: 14d
+      'final':
+        duration: permanent
+  Doxing:
+    offences:
+      '1':
+        duration: 14d
+      '2':
+        duration: 30d
+      'final':
+        duration: permanent
+
+
+messages:
+  ban:
+    - "&cYou have been banned!"
+    - ""
+    - "&eReason: &f%reason%"
+    - "&eDuration: %duration%"
+    - "Apply at -> Discord.gg/yourserver"

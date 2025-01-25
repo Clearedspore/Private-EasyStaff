@@ -1,0 +1,124 @@
+name: EasyStaff
+version: '1.0'
+main: me.clearedspore.easyStaff.EasyStaff
+api-version: '1.21'
+softdepend:
+  - TAB
+authors: [ Clearedspore ]
+description: The newest Staff plugin
+commands:
+  freeze:
+    description: Freeze a player
+    permission: easystaff.freeze
+  kick:
+    description: Kick someone
+    permission: easystaff.kick
+    usage: /kick <player>
+  maintenance:
+    description: Maintenance function!
+    permission: easystaff.maintenance
+    usage: /maintenance <arguments>
+  report:
+      description: report a player!
+      permission: easycommands.report.report
+  reports:
+      description: get the reports
+      permission: easystaff.reports.getreports
+      aliases:
+        - getreports
+        - viewreports
+        - openreportsgui
+  staffhelp:
+      description: Request help!
+      permission: easystaff.staffhelp
+      aliases:
+        - shelp
+        - helpstaff
+        - requesthelp
+  chat-toggle:
+    description: Toggle chat
+    permission: easystaff.chat-toggle
+    aliases:
+      - ctoggle
+      - ctogglechat
+      - togglechat
+  clearchat:
+    description: Clear the chat!
+    permission: easycommands.clearchat
+    aliases:
+      - clc
+  dynamiccommand:
+    description: Placeholder for dynamically registered commands
+    permission: easystaff.dynamic
+  easystaff:
+    description: Info about the plugin
+    permission: easystaff.help
+  ban:
+    description: Ban a player
+    permission: easystaff.punishments.ban
+  tempban:
+    description: TempBan a player
+    permission: easystaff.punishments.ban
+  unban:
+    description: Unban a player
+    permission: easystaff.punishments.unban
+  history:
+    description: View a player's punishment history
+    permission: easystaff.punishments.history
+  alts:
+    description: Alts off a player
+    permission: easystaff.alts
+  vanish:
+    description: Toggle vanish
+    permission: easystaff.vanish
+    aliases:
+      - v
+      - togglevanish
+      - va
+permissions:
+  easystaff.freeze.cmdblock:
+    description: Bypass the cmd block
+    default: op
+  easystaff.maintenance.toggle:
+    description: Turn the maintenance on/off
+    default: op
+  easystaff.maintenance.add:
+    description: Add a player to the maintenance whitelist
+    default: op
+  easystaff.maintenance.remove:
+    description: Remove a player from the maintenance whitelist
+    default: op
+  easystaff.maintenance.kickall:
+    description: Kick all the players that are not on the maintenance whitelist
+    default: op
+  easystaff.maintenance.*:
+    description: Permission to all maintenance commands
+    default: op
+  easystaff.reports.manage:
+    description: Manage reports
+    default: op
+  easystaff.reports.getreports:
+    description: View reports
+    default: op
+  easystaff.reports.reportnotify:
+    description: information about reporting
+    default: op
+  easystaff.reports.bypasscooldown:
+    description: Bypass the report cooldown
+    default: op
+  easystaff.staffhelp.bypasscooldown:
+    description: bypass the help cooldown
+    default: op
+  easystaff.chat-toggle.bypass:
+    description: Bypass the chat toggle
+    default: op
+  easystaff.help.reload:
+    description: Reload the plugin
+    default: op
+  easystaff.help:
+    description: Info about the plugin
+    default: op
+  easystaff.punishments.notify:
+    description: Notification messages for staff
+    default: op
+

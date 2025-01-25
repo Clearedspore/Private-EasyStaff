@@ -1,0 +1,31 @@
+staffmode:
+  permission: easystaff.modes.staff
+  weight: 1
+  gamemode: survival
+  flight: enabled
+  block-break: false
+  block-place: false
+  inventory-interact: false
+  item-pickup: false
+  item-drop: false
+  vanished: true
+  items:
+    - 1, compass
+    - 2, punish
+    - 3, randomtp
+  adminmode:
+    permission: easystaff.modes.admin
+    weight: 2
+    gamemode: creative
+    flight: enabled
+    block-break: true
+    block-place: true
+    inventory-interact: true
+    item-pickup: true
+    item-drop: true
+    vanished: true
+    items:
+      - 1, compass
+      - 2, punish
+      - 3, randomtp
+      - 4, staffceck

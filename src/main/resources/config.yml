@@ -1,0 +1,78 @@
+#===================================
+#            EasyStaff
+#===================================
+#EasyStaff is the newest staff plugin with loads off many features
+
+mutechat: false # if the chat is muted or not!
+
+#Maintenance Function
+#This is a sort of whitelist but better!
+#You can add/remove players, Kick all the players that are not added with /maintenance add, kick message, join message. And more!
+#You can edit it below.
+maintenance: false #Enable/Disable the maintenance
+kick-message: "&cStaff members have enabled maintenance" #Message players get when they get kicked
+join-denied-message: # Message the player get when they try to join while maintenance is enabled
+  - "&cMaintenance Enabled"
+  - "&c"
+  - "&fStaff has enabled maintenance, you can't join."
+  - "&fGet more info about the server in our Discord!"
+whitelist: #Players that can join while maintenance is enabled
+  - Notch
+
+
+reportcooldown: 5 minutes # you can use: seconds, minutes, hours, and days
+reportreasons: # Report reasons here!
+  - Spamming
+  - Advertising
+  - Cheating
+  - Discrimination
+  - Death-Wishes
+  - Dox-Threatening
+  - Harassment
+  - Impersonation
+  - Inappropriate-Content
+  - Insulting
+  - NSFW-Material
+  - Staff-disrespect
+  - inappropriate-behavior
+  - inappropriate-items/teamnames
+  - inappropriate-skin
+
+channels:
+  staffchat:
+    command:
+      - /staffchat
+      - /sc
+    prefix: "&f[&9StaffChat&f]:"
+    name: "&9StaffChat"
+    permission: easystaff.chat.staff
+  adminchat:
+    command:
+      - /adminchat
+      - /adc
+    prefix: "&f[&cAdminChat&f]:"
+    name: "&cAdminChat"
+    permission: easystaff.chat.admin
+
+
+#punishments extras
+onlinenotify:
+  - "&c&lPlayer Ban"
+  - "&bA rule breaker has been removed from the server"
+  - "&cUse /report to keep the server safe"
+
+
+
+#vanish options
+vanish-tag: " §f[§b§lVanished§f]" #tag you get on tab and in third person
+actionbar: " §fYou are §9Vanished §f| Chat: %channel%" #actionbar you get when you enable vanish
+block-break: true #if you can break blocks in vanish
+block-place: true #if you can place blocks in vanish
+flight: true #if flight is enabled in vanish
+pvp: true #if you can fight in vanish
+item-pickup: true #if you can pickup items in vanish
+item-drop: true #if you can drop items in vanish
+inventory-interact: true #if you can move/throw items in vanish
+#SET THESE MESSAGES TO YOUR LEAVE/JOIN MESSAGES!
+leave-msg: "§e%player% has left the game" #message that gets send to everyone when you go in vanish
+join-msg: "§e%player% has joined the game" #message that get send to everyone when you leave vanish
